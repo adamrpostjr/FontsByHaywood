@@ -1,0 +1,95 @@
+html, body, header{
+  /* background-color: black; */
+  overflow-x: hidden;
+}
+header{
+  background: #062a50;
+  height: 4rem;
+  color: white;
+  padding: 10px;
+}
+header #title{
+  float: left;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+header #menu{
+  float: right;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}header #menu span{
+z-index: 10
+}
+.dropdown{
+  position: absolute;
+  right: -200px;
+  bottom: 0;
+  color: black;
+  text-align: right;
+  display: flex;
+  background: #062a50;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 0;
+  width: 10%;
+transition: right 1s cubic-bezier(1, -1.04, 0, 1.96);
+}
+.dropdown ul{
+  list-style: none;
+  padding: 0 15px 0 0;
+  text-align: right;
+}
+.dropdown ul li{
+  padding: 15px 0;
+  text-align: right;
+  color: white;
+}
+.dropdown ul li:hover{
+  text-align: right;
+}
+
+#menu:hover .dropdown{
+  right: 0;
+}
+@-webkit-keyframes rotating {
+    from{
+    -webkit-transform: rotate(0deg);
+    }to{
+    -webkit-transform: rotate(360deg);
+    }
+}
+.rotating {
+    -webkit-animation: rotating 2s linear infinite;
+}
+/* .body{
+  text-align: center;
+} */
+.types{
+  border: solid 2px #062a50;
+  margin: 20px;
+}
+
+
+
+
+#mouseTracker{
+  position: absolute;
+  height: 100px;
+  width: auto;
+  z-index: 10;
+}
