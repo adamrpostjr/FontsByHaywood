@@ -32,7 +32,7 @@ header #menu{
   -ms-user-select: none; /* IE10+/Edge */
   user-select: none; /* Standard */
 }header #menu span{
-z-index: 10
+z-index: 15
 }
 .dropdown{
   position: absolute;
@@ -45,9 +45,9 @@ z-index: 10
   height: 100%;
   flex-direction: column;
   justify-content: center;
-  z-index: 0;
+  z-index: 10;
   width: 10%;
-transition: right 1s cubic-bezier(1, -1.04, 0, 1.96);
+  transition: right 1s cubic-bezier(1, -1.04, 0, 1.96);
 }
 .dropdown ul{
   list-style: none;
@@ -82,8 +82,18 @@ transition: right 1s cubic-bezier(1, -1.04, 0, 1.96);
 .types{
   border: solid 2px #062a50;
   margin: 20px;
+  width: 100%
 }
-
+.prev{
+  text-align: center
+}
+@font-face {
+  font-family: JamesFont;
+  src: url(/assets/fonts/JamesFont.TTF);
+}
+.fontblock h1{
+  font-family: JamesFont;
+}
 
 
 
@@ -91,5 +101,5 @@ transition: right 1s cubic-bezier(1, -1.04, 0, 1.96);
   position: absolute;
   height: 100px;
   width: auto;
-  z-index: 10;
+  z-index: 20;
 }
